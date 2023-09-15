@@ -13,12 +13,12 @@ Para iniciar o servidor JSON e usar os dados no arquivo `data.json`, siga estas 
    ```bash
    npm install -g json-server
 
-Navegue até a pasta do servidor:
+2. Navegue até a pasta do servidor:
 
-   ``bash
+   ```bash
     cd server
 
-Inicie o JSON Server, apontando para o arquivo data.json:
+3. Inicie o JSON Server, apontando para o arquivo data.json:
 
    ``bash
     json-server --watch data.json
