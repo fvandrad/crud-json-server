@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+  crossorigin="anonymous" defer></script>
+  <title>CRUD App</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>CRUD App</h1>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" >
+      <!-- aria-hidden="true" -->
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form id="post-form">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+              <button id="cancel-button" title="Fechar" type="button" class="btn-close" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- Formulário para criar ou editar um registro -->
+
+              <input type="hidden" id="post-id">
+
+              <div class="form-floating mb-3">
+                <input type="text" id="post-title" class="form-control" required>
+                <label for="post-title">Título</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <textarea class="form-control" id="post-content" rows="5"></textarea>
+                <label for="post-content">Conteúdo</label>
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <button id="cancel-button1" title="Cancelar" type="button" class="btn btn-outline-secondary bi bi-x"
+                data-bs-dismiss="modal">Cancelar</button>
+              <button id="save-button" title="Salvar" class="btn btn-outline-primary bi bi-send">Salvar</button>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <form class="form-inline my-2 my-lg-2">
+        <input class="form-control mr-sm-2" type="text" id="search-content" placeholder="Procurar" aria-label="Search">
+      </form>
+    </div>
+
+    <!-- Lista de registros -->
+    <div class="card col-12">
+      <div class="card-body">
+        <button type="button" title="Novo" id="openModalBtn" class="btn btn-outline-primary" data-bs-toggle="modal"
+          data-bs-target="#exampleModal"><i class="bi bi-plus-circle"></i></button>
+        <table id="post-list" class="table table-hover align-middle">
+        </table>
+      </div>
+    </div>
+
+    <div class="toast-container position-fixed top-0 end-0 p-3" data-bs-backdrop="static">
+      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto"></strong>
+          <small></small>
+          <button type="button" title="Fechar" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body" id="toast-msg">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    const filtroInput = document.getElementById('search-content');
+    const listaElementos = document.getElementById('post-list').getElementsByTagName('tbody');
+
+    // Adiciona um ouvinte de evento para detectar quando uma tecla é pressionada na caixa de texto
+    filtroInput.addEventListener('keyup', function () {
+      const filtro = filtroInput.value.toLowerCase(); // Obtém o valor da caixa de texto em letras minúsculas
+
+      // Itera sobre os elementos da lista e os mostra ou esconde com base no filtro
+      for (const elemento of listaElementos) {
+        const conteudoElemento = elemento.textContent.toLowerCase();
+        if (conteudoElemento.includes(filtro)) {
+          elemento.classList.add('visible');
+          elemento.classList.remove('visually-hidden');
+
+        } else {
+          elemento.classList.add('visually-hidden');
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>

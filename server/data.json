@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "title": "Título 2",
+      "content": "2",
+      "id": 2
+    },
+    {
+      "title": "Título 1.1",
+      "content": "teste",
+      "id": 3
+    },
+    {
+      "title": "Título 3",
+      "content": "3",
+      "id": 4
+    },
+    {
+      "title": "Título 9",
+      "content": "9",
+      "id": 5
+    },
+    {
+      "title": "Título 10",
+      "content": "10",
+      "id": 6
+    },
+    {
+      "title": "Título",
+      "content": "j",
+      "id": 7
+    },
+    {
+      "title": "Título 1",
+      "content": "teste",
+      "id": 8
+    }
+  ],
+  "users": [
+    {
+      "username": "teste",
+      "email": "teste@teste.com",
+      "id": 10
+    }
+  ]
+}
