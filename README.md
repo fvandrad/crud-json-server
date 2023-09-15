@@ -15,11 +15,12 @@ Para iniciar o servidor JSON e usar os dados no arquivo `data.json`, siga estas 
 
 Navegue até a pasta do servidor:
 
-   ```bash
+   ``bash
     cd server
-    Inicie o JSON Server, apontando para o arquivo data.json:
 
-   ```bash
+Inicie o JSON Server, apontando para o arquivo data.json:
+
+   ``bash
     json-server --watch data.json
 
 O servidor JSON estará disponível em http://localhost:3000 por padrão. Você pode ajustar a porta ou outras configurações conforme necessário.
