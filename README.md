@@ -38,9 +38,6 @@ Alteração de dados existentes.
 Exclusão de dados.
 Sinta-se à vontade para explorar o código-fonte e personalizar a aplicação de acordo com suas necessidades.
 
-Como Contribuir
-Se você deseja contribuir para este projeto, sinta-se à vontade para abrir problemas (issues) ou enviar pull requests. Estamos felizes em receber contribuições de todos!
-
 Licença
 Este projeto está licenciado sob a Licença MIT - consulte o arquivo LICENSE para obter detalhes.
 
