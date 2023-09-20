@@ -1,6 +1,6 @@
 # crud-json-server
 
-# Projeto JSON Server com Bootstrap
+# Projeto JSON Server com Bootstrap 5.3
 
 Este projeto utiliza o JSON Server e o Bootstrap para criar uma aplicação de gerenciamento de dados simples. Você pode listar, incluir, alterar e excluir dados facilmente.
 
