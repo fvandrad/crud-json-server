@@ -1,4 +1,4 @@
-# crud-json-server 2023
+# crud-json-server
 
 # Projeto JSON Server com Bootstrap 5.3
 
