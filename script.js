@@ -14,6 +14,9 @@ const myModal = document.getElementById('exampleModal');
 const apiUrl = 'http://localhost:3000/posts'; // ?_sort=title&_order=asc
 
 // location.reload(true);
+myModal.addEventListener('shown.bs.modal', () => {
+  postTitleInput.focus()
+})
 
 
 // Event listener para o botão de cancelar
