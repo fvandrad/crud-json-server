@@ -29,7 +29,8 @@ O servidor JSON estará disponível em http://localhost:3000 por padrão. Você 
 Este projeto faz uso da seguinte tecnologia:
 
 Bootstrap 5.3: Um framework de código aberto para desenvolvimento web responsivo e ágil.
-Recursos
+
+##Recursos
 Aqui estão algumas das principais funcionalidades desta aplicação:
 
 Listagem de dados.
