@@ -40,7 +40,8 @@ Alteração de dados existentes.
 Exclusão de dados.
 Sinta-se à vontade para explorar o código-fonte e personalizar a aplicação de acordo com suas necessidades.
 
-Licença
+### Licença
+
 Este projeto está licenciado sob a Licença MIT - consulte o arquivo LICENSE para obter detalhes.
 
 Aproveite o projeto!
