@@ -19,15 +19,13 @@ myModal.addEventListener('shown.bs.modal', () => {
 })
 
 
-// Event listener para o botão de cancelar
-cancelButton.addEventListener('click', event => {
+function cancelAndClearForm(event) {
   event.preventDefault();
   clearForm();
-});
-cancelButton1.addEventListener('click', event => {
-  event.preventDefault();
-  clearForm();
-});
+}
+
+cancelButton.addEventListener('click', cancelAndClearForm);
+cancelButton1.addEventListener('click', cancelAndClearForm);
 
 // Função para carregar os registros
 function getAll() {
