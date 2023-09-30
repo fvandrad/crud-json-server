@@ -38,6 +38,7 @@ Listagem de dados.
 Inclusão de novos dados.
 Alteração de dados existentes.
 Exclusão de dados.
+
 Sinta-se à vontade para explorar o código-fonte e personalizar a aplicação de acordo com suas necessidades.
 
 ### Licença
